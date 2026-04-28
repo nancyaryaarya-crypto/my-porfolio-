@@ -5,7 +5,7 @@ import { ArrowRight, Download, Upload } from 'lucide-react';
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
 
 const Home = () => {
-  const [profileImg, setProfileImg] = useState('/profile-photo.jpg');
+  const [profileImg, setProfileImg] = useState('/profile-photo.jpeg');
   const [resumeData, setResumeData] = useState('/resume.pdf');
 
   useEffect(() => {
