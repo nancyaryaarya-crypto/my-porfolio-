@@ -114,22 +114,23 @@ const Projects = () => {
               </div>
             </motion.div>
           ))}
-
-          {/* Add Project Button Card */}
-          <motion.div
-            initial={{ opacity: 0, scale: 0.9 }}
-            whileInView={{ opacity: 1, scale: 1 }}
-            viewport={{ once: true }}
-            onClick={() => setIsModalOpen(true)}
-            className="border-2 border-dashed border-gray-300 dark:border-gray-700 rounded-xl flex flex-col items-center justify-center p-8 cursor-pointer hover:border-primary hover:bg-gray-50 dark:hover:bg-gray-900/50 transition-all group min-h-[350px]"
-          >
-            <div className="w-16 h-16 rounded-full bg-gray-100 dark:bg-gray-800 flex items-center justify-center mb-4 group-hover:bg-primary/10 transition-colors">
-              <Plus size={32} className="text-gray-400 group-hover:text-primary transition-colors" />
-            </div>
-            <p className="text-lg font-semibold text-gray-600 dark:text-gray-400 group-hover:text-primary transition-colors">Add New Project</p>
-            <p className="text-sm text-gray-400 dark:text-gray-500 text-center mt-2">Click to manually add a project to your portfolio</p>
-          </motion.div>
         </div>
+
+        {/* Floating Add Project Button */}
+        <motion.button
+          initial={{ opacity: 0, scale: 0 }}
+          animate={{ opacity: 1, scale: 1 }}
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.9 }}
+          onClick={() => setIsModalOpen(true)}
+          className="fixed bottom-8 right-8 z-[60] p-4 bg-primary text-white rounded-full shadow-2xl shadow-primary/40 hover:bg-secondary transition-all flex items-center justify-center group"
+          title="Add New Project"
+        >
+          <Plus size={28} />
+          <span className="max-w-0 overflow-hidden group-hover:max-w-xs group-hover:ml-2 transition-all duration-300 font-semibold whitespace-nowrap">
+            Add Project
+          </span>
+        </motion.button>
 
       </div>
 

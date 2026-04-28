@@ -1,5 +1,6 @@
 import jobPortalImg from '../assets/job-portal.png';
 import amazonCloneImg from '../assets/amazon-clone.png';
+import portfolioImg from '../assets/portfolio-thumb.png';
 
 /**
  * HOW TO ADD A NEW PROJECT:
@@ -26,6 +27,15 @@ export const projects = [
     tech: ['HTML5', 'CSS3', 'Responsive Design'],
     github: 'https://github.com/nancyaryaarya-crypto/Amazon-clone',
     live: 'https://nancyaryaarya-crypto.github.io/Amazon-clone/'
+  },
+  {
+    id: 3,
+    title: 'Personal Portfolio',
+    description: 'A modern, professional portfolio website featuring dark mode, dynamic project management, and smooth animations. Fully responsive and deployed on GitHub Pages.',
+    image: portfolioImg,
+    tech: ['React', 'Vite', 'Tailwind CSS', 'Framer Motion'],
+    github: 'https://github.com/nancyaryaarya-crypto/my-porfolio-',
+    live: 'https://nancyaryaarya-crypto.github.io/my-porfolio-/'
   },
   /* 
   TEMPLATE FOR NEW PROJECT:
