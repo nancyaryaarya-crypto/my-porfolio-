@@ -11,7 +11,8 @@ const Home = () => {
 
   useEffect(() => {
     const savedImg = localStorage.getItem('profileImg');
-    if (savedImg) {
+    // Only use localStorage if it contains a base64 image (user-uploaded)
+    if (savedImg && savedImg.startsWith('data:image')) {
       setProfileImg(savedImg);
     }
     const savedResume = localStorage.getItem('resumePdf');
