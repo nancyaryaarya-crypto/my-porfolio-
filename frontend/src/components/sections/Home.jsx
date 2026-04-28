@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import { Link } from 'react-scroll';
 import { ArrowRight, Download, Upload } from 'lucide-react';
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
-import profilePhoto from '../assets/profile-photo.jpeg';
+import profilePhoto from '../../assets/profile-photo.jpeg';
 
 const Home = () => {
   const [profileImg, setProfileImg] = useState(profilePhoto);
