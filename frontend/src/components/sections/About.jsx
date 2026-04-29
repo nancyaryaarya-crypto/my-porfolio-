@@ -25,15 +25,15 @@ const About = () => {
               <h3 className="text-2xl font-bold text-gray-900 dark:text-white">I am Nancy Kumari</h3>
             </div>
             <p className="text-gray-600 dark:text-gray-400 mb-6 leading-relaxed">
-              I’m a developer who enjoys turning ideas into real-world web applications. With a strong foundation in the MERN stack, I focus on creating seamless user experiences and scalable backend systems while constantly improving my skills.
+              My name is <strong>Nancy Kumari</strong>. I am originally from Bihar and am currently completing my B.Tech in Computer Engineering from <strong>Silver Oak University, Ahmedabad</strong>. I am passionate about web development, especially the MERN stack. I have built several projects using React.js, Node.js, Express.js, and MongoDB, where I focused on creating responsive, user-friendly, and efficient web applications.
             </p>
             <div className="bg-gray-50 dark:bg-gray-900 p-6 rounded-lg border border-gray-100 dark:border-gray-700">
               <div className="flex items-center mb-3">
                 <Briefcase className="text-primary w-5 h-5 mr-2" />
-                <h4 className="text-lg font-semibold text-gray-900 dark:text-white">Career Objective</h4>
+                <h4 className="text-lg font-semibold text-gray-900 dark:text-white">Growth & Adaptability</h4>
               </div>
               <p className="text-gray-600 dark:text-gray-400 text-sm">
-                I aim to build efficient, user-friendly web applications that solve real-world problems while continuously improving my skills as a full-stack developer and contributing to impactful projects.
+                Along with technical skills, I am continuously improving my communication and problem-solving abilities. I am a quick learner, adaptable, and enjoy taking on new challenges. I am looking for an opportunity to apply my skills, gain real-world experience, and grow as a Full-Stack Developer while contributing to the organization.
               </p>
             </div>
           </motion.div>
