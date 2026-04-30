@@ -7,17 +7,13 @@ import profilePhoto from '../../assets/profile-photo.jpeg';
 
 const Home = () => {
   const [profileImg, setProfileImg] = useState(profilePhoto);
-  const [resumeData, setResumeData] = useState('/resume.pdf');
+  const [resumeData, setResumeData] = useState('/my-porfolio-/resume.pdf');
 
   useEffect(() => {
     const savedImg = localStorage.getItem('profileImg');
     // Only use localStorage if it contains a base64 image (user-uploaded)
     if (savedImg && savedImg.startsWith('data:image')) {
       setProfileImg(savedImg);
-    }
-    const savedResume = localStorage.getItem('resumePdf');
-    if (savedResume) {
-      setResumeData(savedResume);
     }
   }, []);
 
